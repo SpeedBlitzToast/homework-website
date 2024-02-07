@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skateboard Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.back_video{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  @media (min-aspect-ratio: 16/9){
+.back_video{
+  width: 100%;
+  height:auto;
+}
+  }
+  @media (max-aspect-ratio: 16/9){
+.back_video{
+  width: 100%;
+  height:auto;
+}
+  }
+  
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-2, .bgimg-3{
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* Create a Parallax Effect */
+.bgimg-2, .bgimg-3{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Skateboard Decks */
+.bgimg-2 {
+  min-height: 100%;
+}
+
+/* Skate Trucks */
+.bgimg-3 {
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#hp  {
+float: right;    
+ margin: 0 0 0 15px;
+}
+
+#lefthp  {
+float: left;    
+ margin: 0 15px 0 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="Decks.html" class="w3-bar-item w3-button w3-hide-small"> DECKS</a>
+    <a href="Trucks.html" class="w3-bar-item w3-button w3-hide-small"> TRUCKS</a>
+    <a href="Wheels.html" class="w3-bar-item w3-button w3-hide-small"> WHEELS</a>
+    <a href="Skate_Tricks.html" class="w3-bar-item w3-button w3-hide-small"> SKATE TRICKS</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="Decks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">DECKS</a>
+    <a href="Trucks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TRUCKS</a>
+    <a href="Wheels.html" class="w3-bar-item w3-button" onclick="toggleFunction()">WHEELS</a>
+    <a href="Skate_Tricks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SKATE TRICKS</a>
+  </div>
+</div>
+
+
+<!-- Skateboard Decks -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="decks">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SKATEBOARD <span class="w3-hide-small">HUB</span></span>
+  </div>
+  <video autoplay muted loop class="back_video">
+    <source src="Extra/Video/main_page.mp4">
+  
+</div>
+
+<!-- Container (Skateboard Decks Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">Welcome to Skateboard Hub</h3>
+  <!-- Add content related to skateboard decks here -->
+  <div class="w3-content w3-container w3-padding-64" id="about" >
+    <h3 class="w3-center">ABOUT SKATEBOARD HUB</h3>
+    <div class="w3-row">
+    <p class="w3-center">Here we will give you a crash course on skateboards.</p>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">Skateboarding</h3>
+  <p class="w3-center"><em>Here are some pictures of people skateboarding.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="Extra/Pictures/Skateboard_1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skateboard 1">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Extra/Pictures/Skateboard_2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skateboard 2">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Extra/Pictures/Skateboard_3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skateboard 3">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Extra/Pictures/Skateboard_4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skateboard 4">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="Extra/Pictures/Skateboard_5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skateboard 5">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Extra/Pictures/Skateboard_6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skateboard 6">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Extra/Pictures/Skateboard_7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skateboard 7">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Extra/Pictures/Skateboard_8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Skateboard 8">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="about" style="margin:110px -16px 0 -16px">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ABOUT <span class="w3-hide-small">SKATEBOARD</span></span>
+  </div>
+</div>
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <img src="Extra/Pictures/Skateboard.jpeg" class="w3-round w3-image" alt="Photo of Skateboard" width="1000" height="500">
+      </div>  
+    <p class="w3-center">Skateboarding is a popular form of recreation and sport, particularly among youths. It involves riding, standing balanced on a board usually made of a specially designed 7–8-ply maple plywood deck with 
+      polyurethane wheels attached to the underside by a pair of skateboarding trucks.</p>
+</div>
+
+<!-- Container (Skate Trucks Section) -->
+<div class="w3-content w3-container w3-padding-64">  
+  <img src="Extra/Pictures/Skatepark.jpeg" alt="Photo of Skatepark" width="600" height="400" id="hp"/>
+  <p class="w3-center" >Considered one of the so-called extreme sports, professional skateboarding includes a variety of competitions, such as vertical and street-style events. Vertical skating, also known as “vert”, features aerial 
+    acrobatics performed in half-pipes initially built to emulate empty swimming pools also known as bowls(commonly found in skateparks). Street style involves performing tricks in a real or simulated urban environment with stairs, 
+    rails, ledges, and other obstacles.
+  </p>
+</div>
+
+<div class="w3-content w3-container w3-padding-64">  
+  <img src="Extra/Pictures/Pushin P.jpg" alt="Photo of Pushing" width="600" height="400" id="lefthp"/>
+  <p class="w3-center" >Skateboarders move by pushing with one foot while keeping the other balanced on the board, or by pumping their legs in structures like a bowl or half-pipe. Additionally, a skateboard can be used by standing on 
+    the deck while on a downward slope, allowing gravity to propel the board and the rider. If the rider's leading foot is their left foot, they are said to ride "regular"; conversely, if their leading foot is their right foot, they are 
+    said to ride "goofy."
+  </p>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">FEEDBACK FORM</h3>
+  <p class="w3-center"><em>I'd love to hear your feedback!</em></p>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input type="hidden" name="access_key" value="3cf508f1-e511-48d9-a929-2ed67e7b684c">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="index.html" class="w3-button w3-black"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

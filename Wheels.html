@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skateboard Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+/* Create a Parallax Effect */
+.bgimg-2, .bgimg-3{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Skateboard Decks */
+.bgimg-2 {
+  min-height: 100%;
+}
+
+/* Skate Trucks */
+.bgimg-3 {
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+  @media (min-aspect-ratio: 16/9){
+.back_video{
+  width: 100%;
+  height:auto;
+}
+  }
+  @media (max-aspect-ratio: 16/9){
+.back_video{
+  width: 100%;
+  height:auto;
+}
+  }
+
+  img{
+  width: 100%;
+  height: 100%;
+}
+
+
+#hp  {
+float: right;    
+ margin: 0 0 0 15px;
+}
+
+#lefthp  {
+float: left;    
+ margin: 0 15px 0 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="Decks.html" class="w3-bar-item w3-button w3-hide-small"> DECKS</a>
+    <a href="Trucks.html" class="w3-bar-item w3-button w3-hide-small"> TRUCKS</a>
+    <a href="Wheels.html" class="w3-bar-item w3-button w3-hide-small"> WHEELS</a>
+    <a href="Skate_Tricks.html" class="w3-bar-item w3-button w3-hide-small"> SKATE TRICKS</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="Decks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">DECKS</a>
+    <a href="Trucks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TRUCKS</a>
+    <a href="Wheels.html" class="w3-bar-item w3-button" onclick="toggleFunction()">WHEELS</a>
+    <a href="Skate_Tricks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SKATE TRICKS</a>
+  </div>
+</div>
+
+
+<!-- Skateboard Decks -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="decks">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SKATEBOARD <span class="w3-hide-small">WHEELS</span></span>
+  </div>
+  <img src="Extra/Pictures/wheels.png" alt="Photo of Skateboard Decks" style="margin:0 0 100px 0"/>
+</div>
+
+<!-- Container (Skateboard Decks Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <!-- Add content related to skateboard decks here -->
+  <div class="w3-content w3-container w3-padding-64" id="about" >
+    <h3 class="w3-center">ABOUT SKATEBOARD WHEELS</h3>
+    <div class="w3-row">
+    <p class="w3-center"> Most skateboard wheels are made of polyurethane (plastic material, which exists in various forms), a durable and versatile material that offers a good balance of grip and slide.
+    </p>
+    <video autoplay muted loop class="back_video">
+      <source src="Extra/Video/wheels.mp4">
+</div>
+
+<div class="w3-content w3-container w3-padding-64">  
+  <img src="Extra/Pictures/skateboard-wheels-diameter.jpeg" alt="Photo of skateboard wheel chart" width="800" height="387" id="lefthp"/>
+  <p class="w3-center" > Skateboard wheels come in various diameters, typically measured in millimeters (mm). Common sizes range from around 49mm to 60mm or more. Smaller wheels are often preferred for technical tricks,
+     while larger wheels are suitable for cruising and transportation. The Durometer measures the hardness of the wheel's urethane. Wheels are rated on a scale, with a higher number indicating harder wheels. Common durometer ratings
+      for skateboard wheels range from 78A (softer) to 101A (harder). Softer wheels provide more grip, while harder wheels offer a smoother slide.
+  </p>
+</div>
+
+<!-- Container (Skate Trucks Section) -->
+<div class="w3-content w3-container w3-padding-64">  
+  <img src="Extra/Pictures/conical.jpeg" alt="Photo of conical wheel" width="600" height="600" id="hp"/>
+  <p class="w3-center" > The contact patch is the area of the wheel that makes contact with the ground. Wider contact patches provide more stability.Wheels come in various shapes, including square-edged, round-edged, and conical.
+     The shape can affect how the wheels perform for different styles of skating.Some wheels have a concave shape, meaning the edges are rounded. This can enhance grip and control, especially during slides.Wheels can have different 
+     core placements – centerset, offset, or sideset. Core placement influences how the wheel performs, affecting factors like grip and slide characteristics.
+</div>
+
+<div class="w3-content w3-container w3-padding-64">  
+  <img src="Extra/Pictures/skateboard_wheel_logo.png" alt="Photo of skateboard logos" width="600" height="314" id="lefthp"/>
+  <p class="w3-center" >Different skateboard wheel brands may offer unique formulations and technologies, affecting factors such as durability and performance.Some brands incorporate special technologies, like formulas for 
+    improved rebound or resistance to flat spots.Skaters often experiment with different wheel setups to find what works best for their skating style and preferences.
+  </p>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">FEEDBACK FORM</h3>
+  <p class="w3-center"><em>I'd love to hear your feedback!</em></p>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input type="hidden" name="access_key" value="3cf508f1-e511-48d9-a929-2ed67e7b684c">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="Wheels.html" class="w3-button w3-black"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skateboard Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.back_video{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  @media (min-aspect-ratio: 16/9){
+.back_video{
+  width: 100%;
+  height:auto;
+}
+  }
+  @media (max-aspect-ratio: 16/9){
+.back_video{
+  width: 100%;
+  height:auto;
+}
+  }
+  
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-2, .bgimg-3{
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+.video1{
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+/* Create a Parallax Effect */
+.bgimg-2, .bgimg-3{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Skateboard Decks */
+.bgimg-2 {
+  min-height: 100%;
+}
+
+/* Skate Trucks */
+.bgimg-3 {
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#hp  {
+float: right;    
+ margin: 0 0 0 15px;
+}
+
+#lefthp  {
+float: left;    
+ margin: 0 15px 0 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="Decks.html" class="w3-bar-item w3-button w3-hide-small"> DECKS</a>
+    <a href="Trucks.html" class="w3-bar-item w3-button w3-hide-small"> TRUCKS</a>
+    <a href="Wheels.html" class="w3-bar-item w3-button w3-hide-small"> WHEELS</a>
+    <a href="Skate_Tricks.html" class="w3-bar-item w3-button w3-hide-small"> SKATE TRICKS</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="Decks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">DECKS</a>
+    <a href="Trucks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TRUCKS</a>
+    <a href="Wheels.html" class="w3-bar-item w3-button" onclick="toggleFunction()">WHEELS</a>
+    <a href="Skate_Tricks.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SKATE TRICKS</a>
+  </div>
+</div>
+
+
+<!-- Skateboard Decks -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="decks">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SKATE <span class="w3-hide-small">TRICKS</span></span>
+  </div>
+  <video autoplay muted loop class="back_video">
+    <source src="Extra/Video/skate.mp4">
+  
+</div>
+
+    <!-- Add content related to skateboard decks here -->
+    <div class="w3-content w3-container w3-padding-64" id="about" >
+      <h3 class="w3-center">ABOUT SKATEBOARD TRICKS</h3>
+      <div class="w3-row">
+      <p class="w3-center"> 
+        Skateboard tricks are diverse maneuvers performed on a skateboard, ranging from flips and grinds in urban settings to aerial acrobatics in skateparks.
+      </p>
+  </div>
+
+<div class="w3-content w3-container w3-padding-64">  
+  <p class="w3-center" >  An ollie is a fundamental skateboard trick where the rider and the skateboard leap into the air without using hands. The ollie is the foundation for many other tricks and is achieved by snapping the tail of the skateboard down while 
+    sliding the front foot forward to level the board in mid-air. Mastering the ollie is a key skill for skateboarders as it forms the basis for a variety of more advanced maneuvers and tricks.
+  </p>
+  <video autoplay muted loop class="video1">
+    <source src="Extra/Video/Ollie.mp4">
+</div>
+
+<!-- Container (Skate Trucks Section) -->
+<div class="w3-content w3-container w3-padding-64">  
+  <p class="w3-center" >  
+    A kickflip is a skateboard trick that builds on the ollie. It involves executing an ollie and adding a flicking motion with the front foot to make the skateboard spin or flip beneath the rider. The trick is completed by leveling out the board and landing 
+    cleanly. Kickflips showcase a skater's control and style, expanding on the foundational ollie maneuver.
+  </p>
+  <video autoplay muted loop class="video1">
+    <source src="Extra/Video/kickflip.mp4">
+</div>
+
+<div class="w3-content w3-container w3-padding-64">  
+  <p class="w3-center" >  
+    A frontside 180 (fs 180) is a skateboard trick where the rider spins the skateboard 180 degrees while facing forward. It involves an ollie setup, initiating a frontside spin in mid-air, and landing with both feet to complete the maneuver. 
+    The fs 180 is a foundational trick that adds rotation and style to a skater's repertoire.
+  </p>
+  <video autoplay muted loop class="video1">
+    <source src="Extra/Video/fs180.mp4">
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">FEEDBACK FORM</h3>
+  <p class="w3-center"><em>I'd love to hear your feedback!</em></p>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input type="hidden" name="access_key" value="3cf508f1-e511-48d9-a929-2ed67e7b684c">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="Skate_Tricks.html" class="w3-button w3-black"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
